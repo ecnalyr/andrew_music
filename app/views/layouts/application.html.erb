@@ -21,16 +21,15 @@
   </head>
 
   <body>
-    <header>
-      <%= render 'layouts/navigation' %>
-      <%= render 'layouts/messages' %>
-    </header>
-    <div class="row" id="main">
-      <%= yield %>
+    <div class="row">
+      <div class="large-12 columns">
+        <header>
+          <%= render 'layouts/navigation' %>
+        </header>
+        <%= yield %>
+        <%= render 'layouts/footer' %>        
+      </div>
     </div>
-    <footer class="row">
-      <%= render 'layouts/footer' %>
-    </footer>
     <%= javascript_include_tag "application" %>
   </body>
 </html>
